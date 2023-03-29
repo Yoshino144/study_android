@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="top.pcat.study">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:exported="false"
+        android:extractNativeLibs="true"
+        android:grantUriPermissions="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup"
+        tools:targetApi="n">
+        <activity
+            android:name=".StartPage.ZhuyeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Setting.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="top.pcat.study.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+        <meta-data
+            android:name="com.baidu.speech.APP_ID"
+            android:value="26246305" />
+        <meta-data
+            android:name="com.baidu.speech.API_KEY"
+            android:value="GYfrWY0I6fzMouGeBwhUcmK4" />
+        <meta-data
+            android:name="com.baidu.speech.SECRET_KEY"
+            android:value="Th3jxvWrVkB0kDKA5n13Nq0f2mQeoaM0" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".StartPage.StartPageActivitye"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/SplashActivityTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StartPage.InitAdvActivitye" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".User.LoginActivity" />
+        <activity android:name=".User.UserInfoActivity" />
+        <activity android:name=".User.RegisterActivity" />
+        <activity android:name=".Exercises.ExercisesActivity" />
+        <activity android:name=".Search.SearchActivity" />
+        <activity android:name=".Search.MesActivity" />
+        <activity android:name=".FastBlur.FastBlurActivity" />
+        <activity android:name=".Setting.UpData" />
+        <activity android:name=".Curriculum.CurriculumActivity" />
+        <activity android:name=".Curriculum.Collection" />
+        <activity android:name=".Curriculum.Recommend" />
+        <activity android:name=".Setting.Setting" />
+        <activity android:name=".View.ClipImageActivity" />
+        <activity android:name=".Size.ChapterActivity" />
+        <activity android:name=".SpeechRecognition.ActivityOnlineRecog" />
+        <activity
+            android:name=".SpeechRecognition.OnlineSetting"
+            android:configChanges="orientation|keyboardHidden|screenLayout"
+            android:label="识别设置"
+            android:screenOrientation="fullSensor"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
+        <activity android:name=".WrongQuestion.WSubjectActivity" />
+        <activity android:name=".WrongQuestion.WChapterActivity" />
+        <activity android:name=".Size.Examination" />
+        <activity android:name=".NewExercisesActitity.NewExercisesActitity" />
+        <activity android:name=".Size.AHHHHHH" />
+        <activity android:name=".Size.OHHHHHH" />
+        <activity android:name=".PushService.NewFriendActivity" />
+        <activity android:name=".WrongQuestion.WProblemActivity" />
+        <activity android:name=".TabChat.DialogActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/EditDialogStyle"/>
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+    </application>
+
+</manifest>

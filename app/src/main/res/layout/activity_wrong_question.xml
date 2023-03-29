@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:id="@+id/root"
+    tools:context=".WrongQuestion.WSubjectActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/wq_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+    <LinearLayout
+        android:id="@+id/jjj"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <eightbitlab.com.blurview.BlurView
+            android:id="@+id/cur_blu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="错题本"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_marginBottom="1dp"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+
+<!--                    <TextView-->
+<!--                        android:textSize="10sp"-->
+<!--                        android:layout_marginLeft="40dp"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:text="科目名"-->
+<!--                        android:layout_height="wrap_content"/>-->
+
+<!--                    <Space-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_height="wrap_content"/>-->
+
+
+<!--                    <TextView-->
+<!--                        android:textSize="10sp"-->
+<!--                        android:layout_marginRight="40dp"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:text="题数"-->
+<!--                        android:layout_height="wrap_content"/>-->
+
+
+
+<!--                </LinearLayout>-->
+
+            </RelativeLayout>
+
+
+
+        </eightbitlab.com.blurview.BlurView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wu"
+        android:layout_alignTop="@+id/jjj"
+        android:visibility="gone"
+        android:background="@drawable/shape_radius_banner"
+        android:layout_width="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="58dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="无错题"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</RelativeLayout>

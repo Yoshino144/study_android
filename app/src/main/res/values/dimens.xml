@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="image_width">120dp</dimen>
+    <dimen name="image_final_width">32dp</dimen>
+    <dimen name="radar_circle_width">4dp</dimen>
+    <dimen name="radar_head_image_width">60dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+</resources>

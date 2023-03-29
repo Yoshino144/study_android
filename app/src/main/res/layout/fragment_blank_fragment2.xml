@@ -1,0 +1,289 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:roundiv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsv"
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                roundiv:banner_indicator_normal_color="@android:color/white"
+                roundiv:banner_indicator_selected_color="@color/colorPrimary"
+                roundiv:banner_radius="0dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="-40dp"
+                android:background="@drawable/banner_guodu"
+                android:layout_height="40dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-50dp">
+
+
+                <com.youth.banner.indicator.RoundLinesIndicator
+                    android:id="@+id/indicatorrr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+
+            <!--                <androidx.viewpager.widget.ViewPager-->
+            <!--                    android:id="@+id/banner_viewPager"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent" />-->
+
+            <!--                <com.shizhefei.view.indicator.FixedIndicatorView-->
+            <!--                    android:id="@+id/banner_indicator"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="2dp"-->
+            <!--                    android:layout_gravity="right|bottom" />-->
+
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="111dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_radius_banner_xia"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/shape_img">
+
+                    <top.pcat.study.View.CustomRoundAngleImageView
+                        android:layout_width="60dp"
+                        android:layout_height="80dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/image22"
+                        roundiv:left_bottom_radius="7dp"
+                        roundiv:left_top_radius="7dp"
+                        roundiv:right_bottom_radius="7dp"
+                        roundiv:right_top_radius="7dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="C语言"
+                        android:textColor="#000"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="2022/1/22 17:38"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="95dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/twopage_but"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="继续学习"
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/twoThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:text="我的课程"
+                            android:textColor="@color/black"
+                            android:textSize="17dp" />
+
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:text="全部课程 "
+                            android:textColor="@color/pc_blue"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:text="▶"
+                            android:textColor="@color/pc_blue"
+                            android:textSize="8sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:nestedScrollingEnabled="false"
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="-5dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/f2px"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:text="课程榜单"
+                            android:textColor="@color/black"
+                            android:textSize="17dp" />
+
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:text="查看全部 "
+                            android:textColor="@color/pc_blue"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:text="▶"
+                            android:textColor="@color/pc_blue"
+                            android:textSize="8sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <include layout="@layout/item_f2_bb"/>
+
+            </LinearLayout>
+
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="20dp"/>
+
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:roundiv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/kapian_kuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/kapian"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="111dp"
+            android:orientation="horizontal">
+
+
+            <top.pcat.study.View.CustomRoundAngleImageView
+                android:id="@+id/fruit_image"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image33"
+                roundiv:left_bottom_radius="7dp"
+                roundiv:left_top_radius="7dp"
+                roundiv:right_bottom_radius="7dp"
+                roundiv:right_top_radius="7dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/fruit_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="C语言"
+                            android:textColor="#000"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="作者：小菜鸡"
+                            android:textColor="#9F000000"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="95dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/twopage_but"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/f2itembut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="完成 11%"
+                            android:textColor="#fff"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp">
+
+                    <com.akexorcist.roundcornerprogressbar.TextRoundCornerProgressBar
+                        android:id="@+id/pg"
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        app:rcBackgroundColor="#347FCCDE"
+                        app:rcBackgroundPadding="0dp"
+                        app:rcMax="100"
+                        app:rcProgress="40"
+                        app:rcProgressColor="#D889B2DC"
+                        app:rcRadius="80dp"
+                        app:rcSecondaryProgress="60"
+                        app:rcSecondaryProgressColor="#7A7FCCDE"
+                        app:rcAnimationEnable="true"
+                        app:rcAnimationSpeedScale="3"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
